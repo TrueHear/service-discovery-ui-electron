@@ -1,0 +1,27 @@
+import { app, BrowserWindow } from 'electron';
+import { join } from 'path';
+import isDev from 'electron-is-dev';
+
+function createWindow() {
+    const win = new BrowserWindow({
+        width: 800,
+        height: 600,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+        },
+    });
+
+    if (isDev) {
+        // Development: load the Vite dev server
+        win.loadURL('http://localhost:5173');
+    } else {
+        // Production: load from the 'build' folder that was packaged
+        const prodIndexPath = join(process.resourcesPath, 'app', 'build', 'index.html');
+        win.loadURL(`file://${prodIndexPath}`);
+        // or:
+        // win.loadFile(prodIndexPath);
+    }
+}
+
+app.whenReady().then(createWindow);

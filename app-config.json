@@ -1,0 +1,4 @@
+{
+  "REACT_APP_ELECTRON_ENVIRONMENT": "development",
+  "NODE_ENV": "production"
+}
