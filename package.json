@@ -6,12 +6,13 @@
   "main": "electron/main.js",
   "build": {
     "appId": "com.truehear.id",
-    "productName": "TrueHear",
+    "productName": "truehear-device-detector",
     "asar": false,
     "files": [
       "build/**/*",
       "electron/**/*",
-      "package.json"
+      "package.json",
+      "node_modules/**/*"
     ],
     "extraResources": [
       "app-config.json"
