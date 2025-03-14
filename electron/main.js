@@ -71,7 +71,6 @@ async function main(params) {
                 // Open devtools in development (or production if needed)
                 if (configs.REACT_APP_ELECTRON_ENVIRONMENT === 'development')
                     win.webContents.openDevTools();
-
                 // Set up IPC handlers and app lifecycle events
                 setupHandlers(ipcMain, win);
                 setupAppEvents(app, createWindow, globalShortcut);
