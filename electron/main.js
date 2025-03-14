@@ -16,7 +16,7 @@ import setupHandlers from './handlers/index.js';
 
 async function main(params) {
     try {
-        const env = 'development';
+        const env = 'production';
         const configs = loadConfig(env);
         console.log(`[+] Configs Found:`, configs);
         app.whenReady().then(async () => {

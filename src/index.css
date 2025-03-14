@@ -1,2 +1,42 @@
 @import "tailwindcss";
 
+/* Ultra thin transparent scrollbar */
+
+/* Ultra thin transparent scrollbar - vertical */
+::-webkit-scrollbar {
+  width: 4px; /* Vertical scrollbar width */
+  height: 4px; /* Horizontal scrollbar height */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Transparent track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); /* Light transparent thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4); /* Darker on hover */
+}
+
+/* Firefox and other browsers */
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.1);
+}
+
+/* Horizontal scrollbar specific styling */
+::-webkit-scrollbar:horizontal {
+  height: 4px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: rgba(0, 0, 0, 0.2); /* Horizontal thumb styling */
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: rgba(0, 0, 0, 0.4); /* Darker on hover */
+}

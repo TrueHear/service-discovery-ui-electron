@@ -1,4 +1,3 @@
 {
-  "REACT_APP_ELECTRON_ENVIRONMENT": "development",
-  "NODE_ENV": "production"
+  "REACT_APP_ELECTRON_ENVIRONMENT": "production"
 }

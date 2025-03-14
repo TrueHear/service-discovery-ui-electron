@@ -1,12 +1,12 @@
 {
-  "name": "vite-project",
+  "name": "truehear-device-detector",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "main": "electron/main.js",
   "build": {
     "appId": "com.truehear.id",
-    "productName": "truehear-device-detector",
+    "productName": "truehear-device-detector-new",
     "asar": false,
     "files": [
       "build/**/*",
@@ -41,9 +41,8 @@
     "electron-is-dev": "^3.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "service-discovery-lib": "^1.0.2",
-    "tailwindcss": "^4.0.7",
-    "vite-project": "file:"
+    "service-discovery-lib": "^1.0.3",
+    "tailwindcss": "^4.0.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
